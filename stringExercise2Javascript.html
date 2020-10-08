@@ -31,8 +31,8 @@
 
     // Add your code here
     let quoteLength= quote.length;
-    let index = quote.lastIndexOf(substring);
-    let revisedQuote = quote.slice(0,index+1);
+    let index = quote.indexOf(substring);
+    let revisedQuote = quote.slice(0,index)+substring+".";
 
 
     // Don't edit the code below here!
