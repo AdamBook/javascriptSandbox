@@ -41,8 +41,20 @@
     let height = 75;
     let color = 'blue';
 
-    // Add your code here
+    draw(x,y,width,height,color);
 
+    // Add your code here
+    function draw(x,y,width,height,color){
+    ctx.clearRect(x,y,width,height);
+    for(let i=0; i < 100; i++){
+        ctx.beginPath();
+        ctx.fillStyle= color;;
+        ctx.rect(x,y,width,height);
+        ctx.fill();
+    }
+    }
+
+    
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
