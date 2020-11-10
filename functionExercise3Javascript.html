@@ -29,14 +29,19 @@
     let names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
     let para = document.createElement('p');
 
-    chooseName(names);
-    // Add your code here
-
     
+    // Add your code here
+    chooseName(names);
+    
+    function random(min,max){
+        let randomNumber = Math.floor(Math.random() * (max-min));
+        return randomNumber;
+    }
+
     function chooseName(theArray){
-        let randomName = Math.floor(Math.random() * theArray.length);
-        console.log(theArray[randomName]);
-        para.textContent = theArray[randomName];
+        //let randomName = Math.floor(Math.random() * theArray.length);
+        console.log(theArray[random(0,theArray.length)]);
+        para.textContent = theArray[random(0,theArray.length)];
     }
   
     // Don't edit the code below here!
