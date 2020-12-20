@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Loops: Task 1</title>
-    <style>
-      p {
-        color: purple;
-        margin: 0.5em 0;
-      }
 
-      * {
-        box-sizing: border-box;
-      }
-    </style>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Loops: Task 1</title>
+  <style>
+    p {
+      color: purple;
+      margin: 0.5em 0;
+    }
 
-  <body>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
 
-    <section class="preview">
+<body>
+
+  <section class="preview">
 
 
 
-    </section>
+  </section>
 
-  </body>
-  <script>
-    let myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
-    let list = document.createElement('ul');
+</body>
+<script>
+  let myArray = ['tomatoes', 'chick peas', 'onions', 'rice', 'black beans'];
+  let list = document.createElement('ul');
 
-    // Add your code here
-
-    // Don't edit the code below here!
-
-    const section = document.querySelector('section');
+  // Add your code here
+  //const section = document.querySelector('.section');
+  section.innerHTML = '';
+  let i;
+  for (i = 4; i > 0; i--) {
+    let section = document.createElement('p');
+    console.log("Food is: " + myArray[i]);
+    section.textContent = "Food is: " + myArray[i];
     section.appendChild(list);
-  </script>
+
+  }
+
+
+  // Don't edit the code below here!
+
+  const section = document.querySelector('section');
+  section.appendChild(list);
+</script>
 
 </html>
