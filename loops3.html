@@ -42,11 +42,14 @@
 
     // Add your code here
 
+    para.setAttribute('style', 'white-space: pre;');
+
     while (i > 2){
         if (isPrime(i)==true){
             //add stuff to paragraph
             //i--
-            para.textContent += i + "is a prime number! \n";
+            para.textContent += i + "is a prime number!";
+            para.textContent += "\r\n";
             i--;
 
         }
