@@ -42,19 +42,26 @@
     ]
 
     // Add your code here
+      while (i < phonebook.length){
+        if (name === phonebook[i].name){
+        //let nameAndNumber = document.createTextNode(phonebook[i]);
+        //para.appendChild(nameAndNumber);
+        //para.textContent = nameAndNumber;
 
-    while (i<8){
+          para.textContent += 'Name: ' + phonebook[i].name + 'Number: ' + phonebook[i].number;
+          i++;
 
-      if (name == phonebook[i].name){
-        console.log("Name is: " + phonebook[i].name + " and number is: " + phonebook[i].number);
+        }
+        
+        
+         else{
+
+            i++;
+        }
+          
+        
+
       }
-
-
-
-      i++;
-    }
-
-
     // Don't edit the code below here!
     let section = document.querySelector('section');
     section.appendChild(para);
