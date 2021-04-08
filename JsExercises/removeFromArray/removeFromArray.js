@@ -1,31 +1,19 @@
-const removeFromArray = function() {
+const removeFromArray = function(firstArray, ...moreArgs) {
 
-
-        let copyOfArgs = [];
+        let incArray = firstArray;
+        let copyOfArgs = Array.from(arguments);
+        let removedArgs = [];
         let argsToRemove = [];
+        let returningArgs = [];
 
-        for (i=0; i<arguments.length; i++){
-
-            copyOfArgs[i] = arguments[i];
-
-        }
-    
-
-        for (i=0; i<copyOfArgs.length; i++){
-
-            for (b=0; b<arguments.length; b++){
-
-                if (copyOfArgs[i] == arguments[b]){
-                    argsToRemove += arguments[b];
-                }
+        for (i=0; incArray.length; i++){
+            if(incArray[i]==moreArgs[0]){
+                removedArgs = incArray.splice(i,1);
             }
-
         }
 
-
-
-
-        return returningArgs;
+        return incArray;
+    
 
 }
 
