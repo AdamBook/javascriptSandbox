@@ -2,7 +2,7 @@ const removeFromArray = function() {
 
 
         let copyOfArgs = [];
-        let returningArgs = []
+        let argsToRemove = [];
 
         for (i=0; i<arguments.length; i++){
 
@@ -16,11 +16,14 @@ const removeFromArray = function() {
             for (b=0; b<arguments.length; b++){
 
                 if (copyOfArgs[i] == arguments[b]){
-                    returningArgs += arguments[b];
+                    argsToRemove += arguments[b];
                 }
             }
 
         }
+
+
+
 
         return returningArgs;
 
