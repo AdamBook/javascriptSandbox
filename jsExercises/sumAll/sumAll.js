@@ -17,11 +17,13 @@ else{
 }
 
 let loopCount = biggestInt - smallestInt;
-let sum = smallestInt;
+let sum = 0;
+let addNumber = smallestInt;
 
 for (i=0;i<=loopCount;i++){
 
-    sum +=1;
+    sum +=addNumber;
+    addNumber+=1;
 
 }
 
