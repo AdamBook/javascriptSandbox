@@ -1,5 +1,8 @@
 const sumAll = function (intOne, intTwo) {
 
+    // Function to add two numbers together, and every number in between
+    // Expect sumAll(1,4) = 1+2+3+4 = 10
+
     let smallestInt = 0;
     let biggestInt = 0;
 
