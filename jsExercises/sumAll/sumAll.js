@@ -1,33 +1,42 @@
-const sumAll = function(intOne, intTwo) {
+const sumAll = function (intOne, intTwo) {
 
-let smallestInt = 0;
-let biggestInt = 0;
+    let smallestInt = 0;
+    let biggestInt = 0;
 
+    if (intOne < 0 || intTwo < 0) {
 
-// Establish which int is smaller and bigger
-if(intOne < intTwo){
-    
-    smallestInt = intOne;
-    biggestInt = intTwo;
-}
-else{
+        return 'ERROR';
+    }
 
-    smallestInt = intTwo;
-    biggestInt = intOne;
-}
+    if (!Number.isInteger(intOne) || !Number.isInteger(intTwo)){
+        
+        return 'ERROR';
+    }
 
-let loopCount = biggestInt - smallestInt;
-let sum = 0;
-let addNumber = smallestInt;
+    // Establish which int is smaller and bigger
+    if (intOne < intTwo) {
 
-for (i=0;i<=loopCount;i++){
+        smallestInt = intOne;
+        biggestInt = intTwo;
+    }
+    else {
 
-    sum +=addNumber;
-    addNumber+=1;
+        smallestInt = intTwo;
+        biggestInt = intOne;
+    }
 
-}
+    let loopCount = biggestInt - smallestInt;
+    let sum = 0;
+    let addNumber = smallestInt;
 
-return sum;
+    for (i = 0; i <= loopCount; i++) {
+
+        sum += addNumber;
+        addNumber += 1;
+
+    }
+
+    return sum;
 
 }
 
