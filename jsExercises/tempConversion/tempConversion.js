@@ -1,4 +1,6 @@
-const ftoc = function() {
+const ftoc = function(f) {
+
+  
 
 }
 
