@@ -12,17 +12,15 @@
 
 
 
-  <script>
-    'use strict';
+    <script>
+        const container = document.querySelector('#container');
 
-    let value = prompt('What is the "official" name of JavaScript?', '');
+        const content = document.createElement('div');
+        content.classList.add('content');
+        content.textContent = 'This is the glorious text-content!';
 
-    if (value == 'ECMAScript') {
-      alert('Right!');
-    } else {
-      alert("You don't know? ECMAScript!");
-    }
-  </script>
+        container.appendChild(content);
+    </script>
 
 
 </body>
