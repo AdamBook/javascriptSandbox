@@ -5,7 +5,8 @@
     <h1>
         THE TITLE OF YOUR WEBPAGE
     </h1>
-    <button id="btn">Click me</button>
+    <button id="btn">Click Me Too</button>
+
     <div id="container"></div>
 
 
@@ -58,7 +59,9 @@
         //Button below
 
         const btn = document.querySelector('#btn');
-        btn.onclick = () => alert("Hello World");
+        btn.addEventListener('click', () => {
+            alert("Hello World");
+        });
 
         
     </script>
