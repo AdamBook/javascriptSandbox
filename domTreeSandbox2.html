@@ -5,13 +5,35 @@
     <h1>
         THE TITLE OF YOUR WEBPAGE
     </h1>
+    <button onclick="alert('Hello World')">Click me</button>
     <button id="btn">Click Me Too</button>
+    <button id="btn2">Data button</button>
+    <button onclick="alertFunction()">CLICK ME BABY</button>
+   
 
     <div id="container"></div>
    
    
    <script>
 
+       //Button stuff
+       
+       const btn = document.querySelector('#btn');
+        btn.addEventListener('click', () => {
+            alert("Hello world1");
+        });
+
+        btn2.addEventListener('click', function (e){
+            console.log(e.target);
+            e.target.style.background = 'blue';
+        });
+
+        function alertFunction() {
+            alert("YAY YOU DID IT!");
+        }
+
+        //DOM tree text/div wrapping stuff below
+        
         const container = document.querySelector('#container');
         
         const content = document.createElement('div');
@@ -47,6 +69,8 @@
         content2.appendChild(h1);
         content2.appendChild(p2);
         container.appendChild(content2);
+
+        
 
 
 
